@@ -30,9 +30,9 @@ public class GmallPmsApplicationTests {
         System.out.println(byId.getName());*/
 
         //测试增删改在主库，查在从库
-  /*      Brand brand = new Brand();
-        brand.setName("哈哈哈");
-        brandService.save(brand);*/
+        Brand brand = new Brand();
+        brand.setName("honor");
+        brandService.save(brand);
 
 /*
         Brand byId = brandService.getById(53);

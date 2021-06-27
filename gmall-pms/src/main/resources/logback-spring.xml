@@ -20,12 +20,12 @@
     </appender>
     <!--输出到logstash的appender-->
     <appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
-        <destination>192.168.159.128:4560</destination>
+        <destination>192.168.200.130:4560</destination>
         <encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder"/>
     </appender>
 
     <!--日志级别   DEBUG-INFO-WARN-ERROR  -->
-    <root level="DEBUG">
+    <root style="INFO">
         <appender-ref ref="CONSOLE"/>
         <appender-ref ref="FILE"/>
         <appender-ref ref="LOGSTASH"/>
